@@ -1,5 +1,14 @@
-#MLE on test set 2 but works on test set 1
 # question link https://codingcompetitions.withgoogle.com/kickstart/round/0000000000201c0c/0000000000201ca5
+    
+#FULLY WORKING SOLUTION
+    
+T = int(input())
+for x in range(1, T + 1):
+    L, R = map(int, input().split())
+    pairs = min(L, R)
+    print("Case #{}: {}".format(x, (pairs*(pairs+1))//2, flush=True)) 
+
+#MLE on test set 2 but works on test set 1
 def validatee(string):
     k=0
     for i in string:
